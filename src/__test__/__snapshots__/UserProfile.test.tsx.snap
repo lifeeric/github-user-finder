@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox Should render full 1`] = `ShallowWrapper {}`;
+
+exports[`SearchBox Should render full: hello 1`] = `ShallowWrapper {}`;

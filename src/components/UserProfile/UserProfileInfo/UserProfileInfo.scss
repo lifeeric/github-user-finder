@@ -1,0 +1,108 @@
+$badgeColor: #fabd22;
+$secondary: #ababab;
+$btnBgColor: #1d1d1d;
+$color: #2a292e;
+$whiteColor: #ffffff;
+$borderColor: #dadada;
+$red: red;
+
+/** Dark Mode Color */
+$dark-color-text: #d1d1d1;
+
+:root {
+  --color-yellow: #{$badgeColor};
+  --color-text: #{$color};
+  --color-border: #{$borderColor};
+  --color-button: #{$btnBgColor};
+  --color-white: #{$whiteColor};
+  --color-bg: #{$btnBgColor};
+  --color-light: #{$secondary};
+  --color-hover-bg: #{$whiteColor};
+  --color-hover-border-color: #{$badgeColor};
+  --color-hover-color: #{$badgeColor};
+}
+
+.profile.darkmode {
+  --color-bg: #363636;
+  --color-text: #d1d1d1;
+  --color-button: #{$btnBgColor};
+  --color-hover-bg: #{$badgeColor};
+  --color-hover-border-color: #{$badgeColor};
+  --color-hover-color: #363636;
+  --color-white: #{$whiteColor};
+  --color-light: #9f9f9f;
+}
+
+.profile {
+  &__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 11px auto;
+
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  &__badge {
+    color: var(--color-yellow);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 800;
+  }
+
+  &__name {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    color: var(--color-text);
+  }
+  &__skill {
+    font-size: 10px;
+    display: block;
+    color: var(--color-light);
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  &__action {
+    background-color: var(--color-bg);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    color: var(--color-white);
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px auto 20px;
+
+    &:hover {
+      background-color: var(--color-hover-bg);
+      border-color: var(--color-hover-border-color);
+      color: var(--color-hover-color);
+    }
+  }
+
+  /** Counter */
+  &__counter {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  &__follow__label {
+    font-size: 10px;
+    color: var(--color-light);
+  }
+
+  &__follow__number {
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--color-text);
+  }
+}
