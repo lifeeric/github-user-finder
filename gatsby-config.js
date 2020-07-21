@@ -3,8 +3,6 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-console.log(process.env.GATSBY_CLIENT_EMAIL, ' env variables')
-
 module.exports = {
   siteMetadata: {
     title: `Github User Finder`,
@@ -65,24 +63,24 @@ module.exports = {
         windowKey: "__PRELOADED_STATE__",
       },
     },
-    {
-      resolve: "gatsby-plugin-guess-js",
-      options: {
-        // Find the view id in the GA admin in a section labeled "views"
-        GAViewID: `224297199`,
-        minimumThreshold: 0.03,
-        // Set Google Analytics jwt with Google Service Account email and private key
-        jwt: {
-          client_email: `${process.env.GATSBY_CLIENT_EMAIL}`,
-          private_key: `${process.env.GATSBY_KEY}`,
-        },
-        // The "period" for fetching analytic data.
-        period: {
-          startDate: new Date(),
-          endDate: new Date(),
-        },
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-guess-js",
+    //   options: {
+    //     // Find the view id in the GA admin in a section labeled "views"
+    //     GAViewID: `224297199`,
+    //     minimumThreshold: 0.03,
+    //     // Set Google Analytics jwt with Google Service Account email and private key
+    //     jwt: {
+    //       client_email: `${process.env.GATSBY_CLIENT_EMAIL}`,
+    //       private_key: `${process.env.GATSBY_KEY}`,
+    //     },
+    //     // The "period" for fetching analytic data.
+    //     period: {
+    //       startDate: new Date(),
+    //       endDate: new Date(),
+    //     },
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
