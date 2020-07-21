@@ -29,8 +29,10 @@ gatsby new github-user-finder https://github.com/lifeeric/github-user-finder
 
 ```
 
-1 - head over to ["Personal acces tokens"](https://github.com/settings/tokens), create token and save it in the `.env.*` file.
+head over to ["Personal acces tokens"](https://github.com/settings/tokens), create token and save it in the `.env.*` file.
+```
 GATSBY_GITHUB_API=<Your Api here>
+```
 
 1.  **Start developing.**
 
