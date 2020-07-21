@@ -89,6 +89,7 @@ const Navbar: React.FC = () => {
         target="_blank"
         href="https://github.com/lifeeric"
         rel="noreferrer"
+        title="Github Profile"
       >
         <FiGithub />
       </Button>

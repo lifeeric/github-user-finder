@@ -1,6 +1,5 @@
 import * as React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled, { css } from "styled-components"
 
 interface Props {}
 
@@ -11,19 +10,29 @@ const Footer = styled.footer`
   color: #bbb;
 `
 
-const Span = styled.span`
+const basestyle = css`
   color: #fabd22;
   border-bottom: 1px dotted #fabd22;
   text-decoration: none;
+`
+const Span = styled.span`
+  ${basestyle}
+`
+
+const ALink = styled.a`
+  ${basestyle}
 `
 
 const FooterComp: React.FC<Props> = () => {
   return (
     <Footer>
       Build with <Span>React</Span> and <Span>Gatsby</Span> available on{" "}
-      <Span as={Link} to="/">
+      <ALink
+        target="_blank"
+        href="https://github.com/lifeeric/github-user-finder"
+      >
         Github
-      </Span>
+      </ALink>
       .
     </Footer>
   )
