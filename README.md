@@ -6,6 +6,7 @@
 Getting user data from Github GrpahQL API's
 
   [![Netlify Status](https://api.netlify.com/api/v1/badges/f6b4005a-af82-4959-a149-5910f5d17c28/deploy-status)](https://app.netlify.com/sites/userfinder/deploys)
+
   [Deployed on Netlify live demo]([https://userfinder.netlify.app/](https://userfinder.netlify.app/))
 
 ## 🚀 Quick start
@@ -24,11 +25,12 @@ Use the Gatsby CLI to create a new site.
 
 # cloning this repo and insalling dependencies
 
-gatsby new github-user-finder [https://github.com/lifeeric/github-user-finder](https://github.com/lifeeric/github-user-finder)
+gatsby new github-user-finder https://github.com/lifeeric/github-user-finder
 
 ```
 
-  
+1 - head over to ["Personal acces tokens"](https://github.com/settings/tokens), create token and save it in the `.env.*` file.
+GATSBY_GITHUB_API=<Your Api here>
 
 1.  **Start developing.**
 
