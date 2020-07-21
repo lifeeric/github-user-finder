@@ -34,6 +34,8 @@ head over to ["Personal acces tokens"](https://github.com/settings/tokens), crea
 GATSBY_GITHUB_API=<Your Api here>
 ```
 
+create `.env.development`, and `.env.production` files in your `/` directory
+
 1.  **Start developing.**
 
   
