@@ -7,7 +7,7 @@ Getting user data from Github GrpahQL API's
 
   [![Netlify Status](https://api.netlify.com/api/v1/badges/f6b4005a-af82-4959-a149-5910f5d17c28/deploy-status)](https://app.netlify.com/sites/userfinder/deploys)
 
-  [Deployed on Netlify live demo]([https://userfinder.netlify.app/](https://userfinder.netlify.app/))
+  [Deployed on Netlify live demo]([https://userfinder.netlify.app/](https://userfinder.netlify.app/)
 
 ## 🚀 Quick start
 
